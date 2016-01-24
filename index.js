@@ -14,7 +14,7 @@ function run (opts) {
 
   browser
     .pipe(finished(opts, function (results) {
-      browser.stop();
+      try { browser.stop(); } catch (e) {}
       dpl.emit('results', results);
     }));
 
