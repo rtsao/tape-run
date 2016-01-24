@@ -9,13 +9,15 @@
   "homepage": "https://github.com/juliangruber/tape-run",
   "main": "index.js",
   "scripts": {
+    "prepublish": "make build",
     "test": "make test"
   },
   "bin": {
     "tape-run": "./bin/run.js"
   },
   "dependencies": {
-    "browser-run": "^3.0.2",
+    "browser-run": "https://github.com/rtsao/browser-run/tarball/messages",
+    "combined-stream": "^1.0.5",
     "optimist": "~0.6.1",
     "tap-finished": "https://github.com/juliangruber/tap-finished/tarball/throw",
     "through": "~2.3.4",
@@ -24,6 +26,7 @@
   "devDependencies": {
     "browserify": "^13.0.0",
     "coverify": "^1.4.1",
+    "shoe": "0.0.15",
     "tape": "~4.4.0"
   },
   "keywords": [

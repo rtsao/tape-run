@@ -10,7 +10,7 @@ test('api: one', function (t) {
     .pipe(run())
     .on('results', function (results) {
       t.equal(results.ok, true);
-    })
+    });
 });
 
 test('api: fail', function (t) {
