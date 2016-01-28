@@ -21,7 +21,7 @@ function run (opts) {
     .pipe(finished(opts, function (results) {
 
       function end(coverage) {
-        try { browser.stop(); } catch (e) {}
+        browser.stop();
         dpl.emit('results', results);
       }
 
